@@ -1,0 +1,12 @@
+library(readxl)
+ df <- read_excel("Financial_Dataset.xlsx", sheet=1)
+ print(colnames(df))
+ print(class(df$Quarter))
+ print(class(df[["Quarter"]]))
+ print(typeof(df$Quarter))
+ print(typeof(df[["Quarter"]]))
+ print(head(df$Quarter, 3))
+ print(is.factor(df$Quarter))
+ print(length(levels(df$Quarter)))
+ print(levels(df$Quarter))
+
